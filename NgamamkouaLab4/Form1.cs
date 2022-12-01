@@ -74,7 +74,7 @@ namespace NgamamkouaLab4
         }
         private void btnReset_Click(object sender, EventArgs e)
         {
-            calls the ResetTrip function
+            //calls the ResetTrip function
             ResetTrip();
         }
 
@@ -109,7 +109,7 @@ namespace NgamamkouaLab4
             // if an int 
             if (int.TryParse(txtPeople.Text, out int num1))
             {
-               swtch (num1)
+               switch (num1)
                 {
                     // calls for the fuction DisplayMsg when integer called is 1 and 3
                     case 1: case 3: DisplayMsg("Special when booking single or triple.\nBOGO Special - Call 555-1212 to receive another person free!", "Limited Time Offer");
@@ -170,11 +170,11 @@ namespace NgamamkouaLab4
                     //if florida radio button is checked
                     else if (radFlorida.Checked == false)
                     {
-                        location = "Florida";
+                        location = "Mexico";
                     }
                     else // conditions false
                     {
-                        location = "Mexico";
+                        location = "Florida";
                     }
                     //Display information groupbox
                     grpInformation.Show();
